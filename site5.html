@@ -31,10 +31,26 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
-
-    </header>
-    <div>
+            <div id="controle-fonte">
+                <button onclick="aumentarfonte()">A+</button>
+                <button onclick="diminuirfonte()">A-</button>
+                <button onclick="contraste()">Contraste</button>
+            </div>
+   
+   
     </section>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+      </script>
+       </header>
     <section class="address" id="address">
         <h2 class="title">Nosso <span>Endereço</span></h2>
         <p>
@@ -49,5 +65,5 @@
     </section>
 </div>
 </body>
-
+<script src="script.js"></script>
 </html>
